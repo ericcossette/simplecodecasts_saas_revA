@@ -7,7 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<<<<<<< HEAD
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
+=======
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+>>>>>>> layout_improvements
   <div class='container'>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
@@ -16,23 +20,41 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+<<<<<<< HEAD
 
       <%= link_to 'Dev Match', root_path, class: 'navbar-brand' %>
+=======
+      
+      <%= link_to root_path, class: 'navbar-brand' do %>
+        <i class="fa fa-users"></i>
+        Dev Match
+      <% end %>
+     
+>>>>>>> layout_improvements
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "About", about_path %></li>
+<<<<<<< HEAD
 
+=======
+>>>>>>> layout_improvements
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
 
+<<<<<<< HEAD
 
 <div class="container">  
   <%= yield %>
 </div>
 
+=======
+<div class="container">  
+  <%= yield %>
+</div>
+>>>>>>> layout_improvements
 
 
 </body>
